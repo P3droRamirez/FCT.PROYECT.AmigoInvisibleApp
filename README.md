@@ -1,6 +1,6 @@
-📌 Proyecto: Aplicación de Sorteo de Amigo Invisible
+#Proyecto: Aplicación de Sorteo de Amigo Invisible
 
-📖 Descripción
+#Descripción
 
 Este repositorio contiene la documentación y el desarrollo del proyecto Aplicación de Sorteo de Amigo Invisible. El objetivo es crear una plataforma digital que facilite la gestión de sorteos de amigo invisible de manera eficiente, automatizada y segura.
 
@@ -14,7 +14,7 @@ src/ → Código fuente (cuando se integre en el repositorio).
 
 resources/ → Otros materiales de apoyo.
 
-🛠 Tecnologías Utilizadas
+#Tecnologías Utilizadas
 
 Lenguajes: Java, C#, JavaScript, HTML, SQL, JSON
 
@@ -22,24 +22,13 @@ Frameworks y plataformas: .NET, Node.js, Firebase
 
 Bases de datos: SQL Server, MySQL
 
-🎯 Objetivos del Proyecto
+#Objetivos del Proyecto
 
 ✔ Crear una plataforma intuitiva y accesible para la gestión de sorteos de amigo invisible.
 ✔ Desarrollar una aplicación web y móvil con funcionalidades avanzadas.
 ✔ Asegurar la privacidad y la seguridad en la asignación de participantes.
 ✔ Documentar cada etapa del proyecto para facilitar su mantenimiento y escalabilidad.
 
-🚀 Cómo Contribuir
-
-Si deseas aportar mejoras a la documentación o al desarrollo, sigue estos pasos:
-
-Realiza un fork del repositorio.
-
-Crea una nueva rama (feature/nueva-funcionalidad).
-
-Sube tus cambios y haz un pull request.
-
-Se revisará tu propuesta antes de fusionarla.
 
 🔗 Contacto
 
