@@ -16,11 +16,11 @@ resources/ → Otros materiales de apoyo.
 
 # Tecnologías Utilizadas
 
-Lenguajes: Java, C#, JavaScript, HTML, SQL, JSON
+Lenguajes: Java,XML,JSON
 
-Frameworks y plataformas: .NET, Node.js, Firebase
+Frameworks y plataformas: Android Studio y Firebase(Authentication,Firestore Database,Storage)
 
-Bases de datos: SQL Server, MySQL
+Bases de datos: Firebase Firestore Database
 
 # Objetivos del Proyecto
 
