@@ -10,9 +10,9 @@ docs/ → Documentación del proyecto.
 
 assets/ → Imágenes, logotipos y recursos gráficos.
 
-src/ → Código fuente (cuando se integre en el repositorio).
+src/versions → Codigo de la app, se subirán diferentes versiones .
 
-resources/ → Otros materiales de apoyo.
+resources/ → Otros materiales de apoyo como ayudas de Firebase.
 
 # Tecnologías Utilizadas
 

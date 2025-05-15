@@ -1,0 +1,114 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+		  // Permitir SOLO a usuarios autenticados escribir en /mail (ajusta según lo necesites)
+    match /mail/{document=**} {
+      allow write: if request.auth != null;
+      allow read: if false; // Opcional: evitar que se lean los correos desde el cliente
+    }
+    // ----------------------------
+    // Grupos
+    // ----------------------------
+    match /groups/{groupId} {
+
+      // Crear grupo si el usuario está autenticado
+      allow create: if request.auth != null;
+
+      // Leer, actualizar o eliminar grupo si el usuario está en el grupo
+      // o si existe su documento en la subcolección /members
+      allow get, update, delete: if isInGroupArray(groupId) ||
+   		exists(/databases/$(database)/documents/groups/$(groupId)/members/$(request.auth.uid)) ||
+  		exists(/databases/$(database)/documents/groups/$(groupId)/members/$(request.auth.token.email));
+     
+      // Permitir listar todos los grupos (para snapshotListener, no muestra datos)
+      allow list: if request.auth != null;
+
+
+			// ----------------------------
+      // Subcolección de asignaciones (sorteo)
+      // ----------------------------
+      match /assignments/{assignmentId} {
+        allow write: if request.auth != null && isGroupOwner(groupId);
+        allow read: if request.auth != null && isInGroupArray(groupId);
+      }
+      
+      // ----------------------------
+      // Subcolección de miembros
+      // ----------------------------
+      match /members/{memberId} {
+  		// Crear miembro si el usuario es el propietario del grupo o se invita por correo
+ 			allow create: if request.auth != null && (
+  		isGroupOwner(groupId) ||            // el owner puede invitar a cualquiera
+  		request.auth.uid == memberId ||     // si se invita a sí mismo
+  		request.resource.data.email == request.auth.token.email // permite invitar a un email que coincide con el suyo
+			);
+
+  		// Leer permitido si el usuario es el destinatario (por UID o email),
+			// o si ya forma parte del grupo, o si es el owner.
+				allow read: if request.auth != null && (
+        isGroupOwner(groupId) ||
+        isInGroupArray(groupId) ||
+        memberId == request.auth.uid ||
+        (request.auth.token.email != null && memberId == request.auth.token.email)
+      );
+
+  		// Permitir eliminar la invitación si el usuario es el destinatario (UID o email)
+  		allow delete: if request.auth != null &&
+      (
+        memberId == request.auth.uid ||
+        (request.auth.token.email != null && memberId == request.auth.token.email)
+      );
+
+  		// Permitir actualizar si:
+      // - El usuario es el miembro (como ya estaba)
+      // - O el owner del grupo (para asignar en sorteo)
+      allow update: if request.auth != null && (
+        request.auth.uid == memberId || isGroupOwner(groupId)
+      );
+}
+
+      // ----------------------------
+      // Subcolección de mensajes (chat)
+      // ----------------------------
+      match /messages/{messageId} {
+        allow read, write: if isInGroupArray(groupId) ||
+          exists(/databases/$(database)/documents/groups/$(groupId)/members/$(request.auth.uid));
+      }
+    }
+    
+    
+
+    // ----------------------------
+    // Usuarios (colección users)
+    // ----------------------------
+    match /users/{userId} {
+
+      // Permitir leer cualquier documento si estás autenticado
+      allow read: if request.auth != null;
+
+      // Solo puedes escribir (crear o editar) tu propio documento
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // ----------------------------
+    // Funciones auxiliares
+    // ----------------------------
+
+    // Verifica si el UID actual está en el array members[] del grupo
+    function isInGroupArray(groupId) {
+      return request.auth != null &&
+        (
+          get(/databases/$(database)/documents/groups/$(groupId)).data.members
+            .hasAny([request.auth.uid]) ||
+          exists(/databases/$(database)/documents/groups/$(groupId)/members/$(request.auth.uid))
+        );
+    }
+
+    // Verifica si el UID actual es el owner del grupo
+    function isGroupOwner(groupId) {
+      return request.auth != null &&
+        get(/databases/$(database)/documents/groups/$(groupId)).data.owner
+          == request.auth.uid;
+    }
+  }
+}
