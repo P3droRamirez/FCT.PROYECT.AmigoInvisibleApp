@@ -5,7 +5,7 @@ Este documento detalla los cambios realizados en cada versión del proyecto **Am
 ---
 
 ## [v3.0] - Versión Final
-### Fecha: 2025-05-10
+### Fecha: 05/06/2025
 ### Añadido:
 - Chat anónimo funcional entre participantes.
 - Validación de entradas en formularios de login y grupo.
@@ -17,7 +17,7 @@ Este documento detalla los cambios realizados en cada versión del proyecto **Am
 ---
 
 ## [v2.0] - Funcionalidad Principal
-### Fecha: 2025-04-15
+### Fecha: 20/05/2025
 ### Añadido:
 - Creación y edición de grupos.
 - Lógica del sorteo aleatorio con verificación de autoasignaciones.
@@ -27,8 +27,8 @@ Este documento detalla los cambios realizados en cada versión del proyecto **Am
 
 ---
 
-## [v1.0] - Versión Login Básico
-### Fecha: 2025-03-20
+## [v1.0] - Versión Login Con Firebase
+### Fecha: 15/05/2025
 ### Añadido:
 - Login y registro de usuarios con Firebase Authentication.
 - Navegación básica entre pantallas de autenticación.
