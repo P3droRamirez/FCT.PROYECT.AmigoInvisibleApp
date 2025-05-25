@@ -35,7 +35,7 @@
 * Descarga el archivo `.zip` más reciente
 * Extrae el contenido y abre el proyecto en Android Studio con `File > Open`
 
-📸 ![Carpeta Versions en el repositorio](../assets/Versions.png)
+![Carpeta Versions en el repositorio](../assets/Versions.png)
 
 
 ---
@@ -91,7 +91,7 @@ Y en `build.gradle (Project)`:
 ```groovy
 classpath 'com.google.gms:google-services:4.3.10'
 ```
-📸 ![Reglas definidas en Firestore](../assets/ReglasFirebase.png)
+![Reglas definidas en Firestore](../assets/ReglasFirebase.png)
 
 ---
 
@@ -128,7 +128,7 @@ defaultConfig {
 * Realiza el sorteo y prueba el chat
 * Cambia el idioma del sistema: verifica que se traduce correctamente
 
-📸 ![App Funcionando con idioma FR](../assets/Grupos(FR).png)
+![App Funcionando con idioma FR](../assets/Grupos(FR).png)
 
 
 ---

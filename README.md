@@ -28,8 +28,6 @@ El objetivo es crear una plataforma digital que facilite la gestión de sorteos 
 
 ## 📂 Estructura del Repositorio
 
-## 📂 Estructura del Repositorio
-
 - [`docs/`](./docs) → Documentación del proyecto 
 
 - [`assets/`](./assets) → Imágenes, logotipos y recursos gráficos del proyecto
@@ -66,7 +64,7 @@ El objetivo es crear una plataforma digital que facilite la gestión de sorteos 
 Consulta la documentación completa del proyecto:
 
 - 📦 [`Manual de Instalación`](./docs/Manual_Instalacion.md)  
-- 📱 [`Guía del Usuario`](./docs/Guia_Usuario.md)
+- 📱  [`Guía del Usuario`](./docs/Guia_Usuario.md)
 
 
 ---

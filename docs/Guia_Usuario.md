@@ -28,7 +28,8 @@ Esta guía te ayudará a utilizar la app paso a paso, tanto si eres propietario 
 2. Introduce tu nombre, correo y una contraseña segura.
 3. Recibirás un **correo de verificación**. Debes validarlo antes de poder acceder.
 
-📸 *(Captura del formulario de registro y validación por correo)*
+![Registro](../assets/RegistrarseApp.png)
+![Validacion](../assets/ValidacionMailRegistro.png)
 
 ---
 
@@ -42,7 +43,7 @@ Una vez dentro de la app verás el menú principal desde el cual puedes acceder 
 * ⚙️ **Configuración (Settings)**
 * 🚪 **Cerrar sesión**
 
-📸 *(Captura del menú principal con cada opción destacada)*
+![Menu Principal](../assets/MenuPrincipal.png)
 
 ---
 
@@ -52,7 +53,7 @@ Una vez dentro de la app verás el menú principal desde el cual puedes acceder 
 2. Accede a tu perfil donde podrás ver tu nombre, email y tu foto de perfil.
 3. Pulsa sobre tu imagen actual para **subir una nueva desde la galería**.
 
-📸 *(Captura del perfil con opción de cambiar foto activada)*
+![Perfil Usuario](../assets/PerfilUsuario.png)
 
 ---
 
@@ -65,7 +66,8 @@ Desde la sección de Configuración podrás:
 * 🔔 Activar o desactivar **notificaciones**
 * 🔊 Ajustar el **volumen de la app**
 
-📸 *(Captura de la pantalla de configuración con opciones visibles)*
+![Opciones](../assets/MenuOpciones.png)
+
 
 ---
 
@@ -91,7 +93,7 @@ Puedes:
 * 👀 **Ver tu persona asignada** después del sorteo
 * ❌ **No puedes añadir participantes ni realizar el sorteo**
 
-📸 *(Captura de grupo con funciones para propietario/invitado)*
+![Detalles Grupo](../assets/MenuDetallesGrupo.png)
 
 ---
 
@@ -105,8 +107,6 @@ Idiomas soportados:
 * Francés 🇫🇷
 
 Puedes cambiar el idioma del dispositivo para ver la app traducida automáticamente.
-
-📸 *(Captura de la misma pantalla en diferentes idiomas)*
 
 ---
 
