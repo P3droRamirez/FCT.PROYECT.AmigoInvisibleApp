@@ -61,10 +61,13 @@ El objetivo es crear una plataforma digital que facilite la gestión de sorteos 
 
 ---
 
-## 📘 Manual de Usuario
+## 📘 Documentación
 
-Consulta el manual completo de instalación y uso aquí:  
-👉 [`docs/Manual Usuario.md`](./docs/Manual%20Usuario.md)
+Consulta la documentación completa del proyecto:
+
+- 📦 [`Manual de Instalación`](./docs/Manual_Instalacion.md)  
+- 📱 [`Guía del Usuario`](./docs/Guia_Usuario.md)
+
 
 ---
 
