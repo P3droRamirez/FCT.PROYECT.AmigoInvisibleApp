@@ -1,35 +1,77 @@
-# Proyecto: Aplicación de Sorteo de Amigo Invisible
+# 🎁 Proyecto: Aplicación de Sorteo de Amigo Invisible
 
-# Descripción
+¡Bienvenido al repositorio oficial del proyecto **Amigo Invisible**!  
+Una app Android intuitiva para crear grupos, organizar sorteos, comunicarte por chat anónimo y disfrutar de una experiencia personalizada con soporte multilenguaje.
 
-Este repositorio contiene la documentación y el desarrollo del proyecto Aplicación de Sorteo de Amigo Invisible. El objetivo es crear una plataforma digital que facilite la gestión de sorteos de amigo invisible de manera eficiente, automatizada y segura.
+---
 
-📂 Estructura del Repositorio
+## 📄 Descripción
 
-docs/ → Documentación del proyecto.
+Este repositorio contiene la documentación y el desarrollo del proyecto **Aplicación de Sorteo de Amigo Invisible**.  
+El objetivo es crear una plataforma digital que facilite la gestión de sorteos de forma eficiente, automatizada y segura.
 
-assets/ → Imágenes, logotipos y recursos gráficos.
+---
 
-src/versions → Codigo de la app, se subirán diferentes versiones .
+## ✨ Características Principales
 
-resources/ → Otros materiales de apoyo como ayudas de Firebase.
+| Funcionalidad            | Descripción                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| 🔐 Autenticación segura  | Registro e inicio de sesión con Firebase Auth                              |
+| 🧑‍🤝‍🧑 Gestión de grupos    | Crea grupos, añade participantes y gestiona sorteos                        |
+| 💬 Chat anónimo          | Interacción segura entre participantes sin revelar identidades             |
+| 🌍 Soporte multilingüe   | Español 🇪🇸 · Inglés 🇬🇧 · Francés 🇫🇷 con detección automática del idioma       |
+| 🎨 Temas personalizados  | Cambia el color del tema según tus preferencias                            |
+| 📦 Firebase Firestore    | Base de datos en tiempo real para usuarios, grupos y mensajes               |
+| 📱 Interfaz adaptable     | Compatible con distintos tamaños de pantalla (smartphones y tablets)        |
 
-# Tecnologías Utilizadas
+---
 
-Lenguajes: Java,XML,JSON
+## 📂 Estructura del Repositorio
 
-Frameworks y plataformas: Android Studio y Firebase(Authentication,Firestore Database,Storage)
+## 📂 Estructura del Repositorio
 
-Bases de datos: Firebase Firestore Database
+- [`docs/`](./docs) → Documentación del proyecto 
 
-# Objetivos del Proyecto
+- [`assets/`](./assets) → Imágenes, logotipos y recursos gráficos del proyecto
 
-✔ Crear una plataforma intuitiva y accesible para la gestión de sorteos de amigo invisible.
-✔ Desarrollar una aplicación web y móvil con funcionalidades avanzadas.
-✔ Asegurar la privacidad y la seguridad en la asignación de participantes.
-✔ Documentar cada etapa del proyecto para facilitar su mantenimiento y escalabilidad.
+- [`src/versions/`](./src/versions) → Código de la app en diferentes versiones comprimidas
+
+- [`resources/`](./resources) → Material de apoyo como configuraciones de Firebase
 
 
-🔗 Contacto
+---
 
-📍 LinkedIn: Pedro Ramírez González📧 Email: [pedroramirez_1991@hotmail.com]
+## 🛠 Tecnologías Utilizadas
+
+- **Lenguajes:** Java · XML · JSON  
+- **IDE:** Android Studio  
+- **Plataforma:** Firebase (Authentication, Firestore Database, Storage)  
+- **Gestión de dependencias:** Gradle  
+- **Diseño de interfaz:** ConstraintLayout · Material Design  
+- **Control de versiones:** Git · GitHub
+
+---
+
+## 🎯 Objetivos del Proyecto
+
+✔ Crear una plataforma intuitiva y accesible para la gestión de sorteos de amigo invisible  
+✔ Desarrollar una aplicación móvil con funcionalidades avanzadas  
+✔ Asegurar la privacidad y la seguridad en la asignación de participantes  
+✔ Documentar cada etapa del proyecto para facilitar su mantenimiento y escalabilidad
+
+---
+
+## 📘 Manual de Usuario
+
+Consulta el manual completo de instalación y uso aquí:  
+👉 [`docs/Manual Usuario.md`](./docs/Manual%20Usuario.md)
+
+---
+
+## 🔗 Contacto
+
+📍 [LinkedIn: Pedro Ramírez González](https://www.linkedin.com/in/pedroramirezgonz/)  
+📧 Email: [pedroramirez_1991@hotmail.com](mailto:pedroramirez_1991@hotmail.com)
+
+---
+
