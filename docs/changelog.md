@@ -5,7 +5,7 @@ Este documento detalla los cambios realizados en cada versión del proyecto **Am
 ---
 
 ## [v3.0] - Versión Final
-### Fecha: 05/06/2025
+### Fecha: 28/05/2025
 ### Añadido:
 - Chat anónimo funcional entre participantes.
 - Validación de entradas en formularios de login y grupo.
